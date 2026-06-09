@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulário com validação</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Validação de formulário</h1>
+    <p>Exemplo iniciante com validação no JavaScript (sem backend).</p>
+
+    <form id="form" class="card" novalidate>
+      <label class="field">
+        <span>Nome</span>
+        <input id="name" type="text" maxlength="60" placeholder="Seu nome" required />
+        <small class="error" data-error="name"></small>
+      </label>
+
+      <label class="field">
+        <span>E-mail</span>
+        <input id="email" type="email" placeholder="voce@exemplo.com" required />
+        <small class="error" data-error="email"></small>
+      </label>
+
+      <label class="field">
+        <span>Senha</span>
+        <input id="password" type="password" maxlength="20" placeholder="mín. 6 caracteres" required minlength="6" />
+        <small class="error" data-error="password"></small>
+      </label>
+
+      <div class="field">
+        <label class="checkbox">
+          <input id="terms" type="checkbox" required />
+          <span>Aceito os termos</span>
+        </label>
+        <small class="error" data-error="terms"></small>
+      </div>
+
+      <button type="submit">Enviar</button>
+      <p id="result" class="result" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

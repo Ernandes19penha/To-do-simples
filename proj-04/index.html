@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cards com filtros</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Cards de produtos + filtros</h1>
+    <p>Filtre por categoria e procure por nome.</p>
+
+    <section class="card filters">
+      <div class="row">
+        <label class="label">Categoria</label>
+        <select id="category">
+          <option value="all">Todas</option>
+          <option value="eletronicos">Eletrônicos</option>
+          <option value="casa">Casa</option>
+          <option value="moda">Moda</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label class="label">Busca</label>
+        <input id="search" type="text" placeholder="Digite para procurar..." />
+      </div>
+
+      <div class="row">
+        <label class="label">Ordenar</label>
+        <select id="sort">
+          <option value="relevancia">Relevância (padrão)</option>
+          <option value="price_asc">Preço (menor)</option>
+          <option value="price_desc">Preço (maior)</option>
+        </select>
+      </div>
+
+      <button id="reset" type="button" class="secondary">Limpar filtros</button>
+    </section>
+
+    <section class="grid" id="grid" aria-live="polite"></section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

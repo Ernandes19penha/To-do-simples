@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-do simples</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>To-do simples</h1>
+      <p>Adicione tarefas, marque como concluída e remova.</p>
+    </header>
+
+    <section class="card">
+      <form id="form" class="row" autocomplete="off">
+        <input id="input" type="text" placeholder="Ex: estudar JavaScript" required maxlength="80" />
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <ul id="list" class="list" aria-live="polite"></ul>
+
+      <footer class="footer">
+        <button id="clearCompleted" class="secondary" type="button">Remover concluídas</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

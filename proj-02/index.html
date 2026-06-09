@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contador + histórico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Contador + histórico</h1>
+    <p>Use os botões para aumentar/diminuir. O histórico mostra as mudanças.</p>
+
+    <section class="card">
+      <div class="value" id="value">0</div>
+
+      <div class="buttons">
+        <button id="minus" type="button">-1</button>
+        <button id="plus" type="button">+1</button>
+        <button id="reset" type="button" class="secondary">Reset</button>
+      </div>
+
+      <h2 class="sub">Histórico</h2>
+      <ul id="history" class="history" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

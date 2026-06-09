@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Calculadora de IMC</h1>
+    <p>Digite altura e peso para calcular automaticamente.</p>
+
+    <section class="card">
+      <div class="row">
+        <label>
+          Altura (m)
+          <input id="height" type="number" step="0.01" min="0.5" placeholder="1.75" />
+        </label>
+        <label>
+          Peso (kg)
+          <input id="weight" type="number" step="0.1" min="1" placeholder="70" />
+        </label>
+      </div>
+
+      <div class="row buttons">
+        <button id="calc" type="button">Calcular IMC</button>
+        <button id="clear" type="button" class="secondary">Limpar</button>
+      </div>
+
+      <div class="resultBox" id="resultBox" aria-live="polite">
+        <div class="big" id="imc">—</div>
+        <div class="desc" id="desc">Preencha os campos e clique em “Calcular”.</div>
+      </div>
+
+      <p class="hint">IMC = peso / (altura²)</p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

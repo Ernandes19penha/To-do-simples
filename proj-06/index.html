@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Busca de frases (mini JS)</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Busca de frases</h1>
+    <p>Digite para filtrar frases por conteúdo (demo local).</p>
+
+    <section class="card">
+      <div class="row">
+        <input id="q" type="text" placeholder="Ex: internet, pizza, escola..." />
+        <button id="btn" type="button">Buscar</button>
+        <button id="reset" type="button" class="secondary">Limpar</button>
+      </div>
+
+      <div id="stats" class="stats" aria-live="polite"></div>
+
+      <ul id="results" class="results"></ul>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
